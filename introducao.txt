@@ -1,0 +1,73 @@
+- Grid é uma estrutura para criar layouts com Bootstrap
+- Temos o grid colunar, dividido em 12 colunas
+- A estrutura do Grid é sempre: container -> row -> colunas
+- Onde temos container para abrigar a seção;
+- Row: para determinar uma linha(largura 100%)
+- Colunas para subdividir o container em até 12 partes
+
+
+-                         TAMANHOS DA COLUNAS
+
+- Podemos ajustar o tamamho das colunas
+- Para ocupar Três espaços: col-3
+- Lembrando que podemos separar em no máximo 12 divisões
+- E o espaço ocupado será proporcional, ou seja, em: col-11 e col-1
+- Teremos uma coluna ocupando quase 100% de largura do row
+
+
+
+-                          LIMITE NÚMERO DE COLUNAS
+
+- Podemos também limitar a quantidade de colunas em uma row(linha)
+- A classe a ser utilizada é: row-cols-*, onde * é o número LIMITE
+- Assim o grid sempre vai respeitar este número máximo na linha.
+
+
+
+-                         ALINHAMENTO VERTICAL
+
+- As colunas dentro de uma row(linha) estão condicionadas ao flex-box;
+- Ou seja, temos classes bem parecidas com as regras de flex para alinhá-layouts
+- Exemplo: align-items-end, alinha no fim da row(linha)
+- Lembrando que esta classe sempre deve ficar no elemento pai(row)
+
+
+-                         ALINHAMENTO HORIZONTAL
+
+- Alinhamento HORIZONTAL segue a mesma premissa do VERTICAL
+- Utilizamos classes no elemento pai row(linha) para condicionar os itens na HORIZONTAL
+- Centralizamos elementos com a classe: justify-content-center
+- As regras end e start também funcionam
+- Podemos combinar vertical e horizontal.
+
+
+-                           ALINHAMENTO DE ITEM 
+
+- Serve para alinhar UM item INDIVIDUALMENTE
+- Utilizamos a classe: align-self-center   que alinha um elemento na vertical
+- Não há alinhamento unitário para a horizontal
+
+
+
+-                           ORDEM DOS ITENS
+
+- É possível alterar a ordem que os itens são exibidos
+- Vamos colocar a classe: order-* 
+- Onde * é a posição do elemento, sendo 1 o primeiro
+- Este recurso é útil no desenvolvimento mobile, onde os elementos costumam a mudar de ordem
+
+
+-                            OFFSET DE COLUNAS
+
+- Podemos também criar um espaçamento com offset
+- Teremos uma MARGEM DA BORDA definida por uma QUANTIDADE de COLUNAS
+- Exemplo: offset-md-3, neste caso teremos um offset de 3 colunas a esquerda;
+
+
+-                             GUTTERS
+
+- GUTTERS são intervalos que podemos inserir entre as colunas
+- È possível inserir no eixo x ou y; x horizontal e y vertical
+- gx-2(horizontal), gy-4(vertical)
+- Os números que utilizamos são baseados em rem da página, fonte do elemnto root;
+- O número 3 é a referência para 1rem;

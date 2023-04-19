@@ -1,0 +1,15 @@
+- Containers são entidades super importantes do bootstrap, estruturam o layout
+- Containers(Depósito de outros elementos)
+- Temos diferentes tipos de Containers, mas o uso é o mesmo: separar o site em área
+
+
+-                            Containers Fluid
+- Utiliza uma área maior para abrigar os elementos
+- Sempre representa 100% da área útil;
+- Eliminando as margens Laterais;
+- A classe é container-fluid
+
+-                            Containers por Breakpoints
+
+- podemos moldar um container pelo breakpoint
+- Utilizamos a classe container-x, onde x pode ser: sm(small), md(medium), lg(large) e outras classes de breakpoints tbm.

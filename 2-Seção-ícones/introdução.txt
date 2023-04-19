@@ -1,0 +1,9 @@
+-                                        Bootstrap Icons
+
+- A partir da versão 5.0 do Bootstrap temos disponíveis ícones em svg(qualidade a mesma em todos tamanhos)
+- Podemos usar com ou sem Bootstrap
+- É possível insstalar por npm, arquivos ou cdn.
+- Para utilizar os ícones vamos criar uma tag insstalar
+- Nesta tag vamos inserir classes para exibir um determinado ícone: bi bi-x-lg
+- Estas classes apresentam um ícone de x;
+- Sempre utilizar a documentação como referência

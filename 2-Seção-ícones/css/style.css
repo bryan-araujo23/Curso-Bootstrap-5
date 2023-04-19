@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.bi.bi-bell {
+    font-size: 240px;
+    color: green;
+    margin: 20px;
+}
+
+.bi {
+    font-size: 60px;
+}
+
+.bi.red {
+    color: red;
+    
+}
+
+.bi.blue {
+    color: blue;
+}

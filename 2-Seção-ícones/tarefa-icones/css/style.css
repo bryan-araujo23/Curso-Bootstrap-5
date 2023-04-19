@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.container {
+    background-color: #999;
+    border: 5px dotted blue;
+    height: 300px;
+}
+
+
+.row {
+    border: 5px solid purple;
+    height: 28%;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+
+.bi.number {
+    font-size: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+    color:crimson;
+    padding: 5px;
+}
+
+
+.bi.android {
+    font-size: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    color: greenyellow;
+    padding: 5px;
+
+}
+
+
+
+.bi.apple {
+    font-size: 70px;
+    position: absolute;
+    left:  50%;
+    top: 27%;
+    transform: translate(-3.5%);
+
+    color:darkgray;
+    padding: 5px;
+}
+
