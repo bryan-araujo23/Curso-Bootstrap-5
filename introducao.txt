@@ -27,8 +27,8 @@
 -                         ALINHAMENTO VERTICAL
 
 - As colunas dentro de uma row(linha) estão condicionadas ao flex-box;
-- Ou seja, temos classes bem parecidas com as regras de flex para alinhá-layouts
-- Exemplo: align-items-end, alinha no fim da row(linha)
+- Ou seja, temos classes bem parecidas com as regras de flex para alinhar layouts
+- Exemplo: align-items-end, alinhar no fim da row(linha)
 - Lembrando que esta classe sempre deve ficar no elemento pai(row)
 
 
@@ -71,3 +71,54 @@
 - gx-2(horizontal), gy-4(vertical)
 - Os números que utilizamos são baseados em rem da página, fonte do elemnto root;
 - O número 3 é a referência para 1rem;
+
+
+
+-                          HEADINGS
+
+- As tags h1 e h6 servem como títulos do nosso site.
+- Além da fonte diminuir, também temos uma redução da margem inferior
+
+
+-                          DISPLAY
+- Classes de diplsy são utilizadas para aumentar os headers
+- Utilizamos display-*, onde * é um número de 1 a 6.
+- Esta classe trás uma fonte mias fina.
+
+
+-                        ELEMENTOS INLINE
+
+- O bootstrap modificou algumas tags para representarem estilo, e trablharem de forma INLINE
+
+
+-                        CITAÇÕES
+
+- HÁ COMPONENTES PARA CITAÇÕES EM Bootstrap
+
+
+
+-                        LISTAS
+
+- Nas classes de bootstrap podemos modeficarum pouco as listas;
+-   list-unstyled: remove os estilos da listas
+- list-inline: deixa horinzontal
+
+
+
+-                        IMAGENS
+
+-  Para adicionar uma imagem responsiva, podemos colocar a classe img-fluid;
+- A imagem vai se adaptar a resoluções diferentes;
+- A escala é referente ao elemento pai da imagem;
+
+
+-                        THUMBNAIL
+
+- IMAGEM  MOLDURADA
+
+
+
+-                        FIGURE
+
+- Uma tag utilizada para quando há necessidade de legenda para uma imagem
+- Bootstrap tem um componente que estiliza essa tag
