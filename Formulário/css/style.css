@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+
+body {
+    padding-bottom: 600px;
+    margin-top: 100px;
+}
+
+.container {                                
+    margin-top: 100px;
+    border: 2px solid blue;
+    height: auto;
+}
+
+.row {
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.col-6 {
+    border: 2px solid red;
+    margin: 30px;
+}
+
+.col-12 {
+    border: 2px solid purple;
+    margin: 5px;
+}
+
+
+
+/*
+.g-3 {                                    Formulário 
+    border:1px solid red;
+}
+
+.col-12,
+.col-md-12,
+.col-md-2,
+.col-md-6,                               6 COLUNAS LATERAIS 
+.col-md-10,                              
+.col-md-4,
+.col-md-2 {
+    border: 1px solid green;
+} 
+
+
+*/

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--BOOTSTRAP ÍCONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--CSS ONLY-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: lightgray;">
+    <!--CRIANDO FORM-->
+    <div class="col-4 m-4">
+
+        <h2>Formulário de Registro</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="e-mail">
+
+                <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail.</div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Insira sua senha">
+            </div>
+            
+            <button type="submit" value="enviar" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    
+    <!-- Podemos Desabilitar um formulário ou campos dele Para um form:
+         precisamos de uma tag fieldset com atributo disabled envolvendo um form. 
+         Para um input: precisamos de um atributo disabled no campo  -->
+
+    <!-- Form desabilitado -->
+    <div class="col-4 m-4">
+        <h2>Formulário Desabilitado</h2>
+
+        <fieldset disabled>
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="e-mail">
+                    <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" name="password" id="password"
+                    placeholder="Insira sua senha">
+                </div>
+                <button type="submit" value="Enviar" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </fieldset>
+    </div>
+
+    <!-- form-control 
+         classe de ajustar os inputs, fazendo que eles fiquem padrão do bootstrap
+         Temos variações com: form-control-sm, md, lg
+         E a lebel leva a classe form-label. -->
+
+    <div class="m-4">
+        <h2>Crie seu Post</h2>
+
+        <form>
+            <div class="col-4 mb-4">
+                <label for="title" class="form-label">Título do Post:</label>
+                <input type="text" id="title" class="form-control form-control-lg" placeholder="Digite seu título">
+            </div>
+            <div class="col-4 mb-4">
+                <label for="content" class="form-label">Conteúdo:</label>
+                <textarea class="form-control" placeholder="Digite o conteúdo do post..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+
+        <form>
+            <div class="col-4 mb-4">
+                <label for="title" class="form-label">Título do Post:</label>
+                <input type="text" id="title2" class="form-control form-control-sm" placeholder="Digite seu título">
+            </div>
+            <div class="col-4 mb-4">
+                <label for="content" class="form-label">Conteúdo:</label>
+                <textarea class="form-control" placeholder="Digite o conteúdo do post..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Read Only
+        O readonly é um atributo que indica somente leitura
+        Atributo: Colocamos o atributo readonly, e o input recebe os estilos do componente
+        class do Bootstrap: o inputfica parecendo apenas um texto
+        obs: readonly é uma forma de enviar dados para o servidor, já o disabled não envia -->
+
+    <div class="col-4 m-4">
+
+        <h2>Formulário de Read Only(somente leitura)</h2>
+        <p>Um campo que já preenchido que vc não poderá alterar</p>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email2" name="email2"  placeholder="e-mail" readonly value="ramosaraujo@gmail.com">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control-plaintext" id="email3" name="email3"  placeholder="e-mail" readonly value="ramosaraujo@gmail.com">
+            </div>           
+            <button type="submit" value="enviar" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Input de arquivos
+         Tem uma forma diferente de receber CSS, o qeu torna a vida dos devs mais dificíl.
+         Mas o bootstrap tem um componente para isso, que facilita nossa vida.
+         deixando o input file mais bonito -->
+
+         <div class="col-4 m-4">
+            <h2>Teste de input de arquivo</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="foto" class="form-label">Apenas um arquivo:</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div class="mb-4">
+                    <label for="fotos" class="form-label">Múltiplos Arquivos:</label>
+                    <input type="file" class="form-control" multiple>
+                </div>
+            </form>
+         </div>
+
+         <!-- Outros elementos -->
+         <div class="col-4 m-4">
+            <h2>Outros inputs</h2>
+            <form>
+                <!-- Datalist -->
+                <div class="mb-4">
+                    <label for="cidades" class="form-label">Selecione uma cidade</label>
+                    <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque sua cidade">
+                    <datalist id="datalistOptions">
+                        <option value="São Paulo"></option>
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Florianópolis"></option>
+                        <option value="Porto Alegre"></option>
+                    </datalist>
+                </div>
+                <!--Cor-->
+                <div class="mb-4">
+                    <label for="cor" class="form-label">Selecione a cor:</label>
+                    <input type="color" class="form-control form-control-color" id="cor" value="#000" title="Escolha uma cor">
+                </div>
+                <!-- Select: Há dois tipos de Select: 
+                     Valor único - Valores múltiplos  -->
+                <div class="mb-4">
+                    <label for="opcoes" class="form-label">Opções</label>
+                    <select name="opcoes" id="opcoes" class="form-select">
+                        <option selected>Selecione uma opção</option>
+                        <option value="1">Primeira opção</option>
+                        <option value="2">Segunda opção</option>
+                        <option value="3">Terceira opção</option>
+                    </select>
+                </div>
+                <!-- Valores múltiplos -->
+                <div class="mb-4">
+                    <label for="opcoes" class="form-label">Selecione as suas opcções:</label>
+                    <select class="form-select" multiple>
+                        <option value="1">Maçã</option>
+                        <option value="2">Banana</option>
+                        <option value="3">Abacate</option>
+                        <option value="4">Laranja</option>
+                    </select>
+                </div>
+
+                <!-- Checkbox e radio button 
+                 Checkbox: Onde podemos selecionar mais de uma opção 
+                 Radio: Selecionamos apenas uma opção-->
+                
+                 <div class="mb-4">
+                    <h2>Marque as opções</h2>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="privacidade">
+                        <label for="privacidade" class="form-check-label">Aceitar termos de privacidade</label>
+                    </div>
+                 </div>
+                 <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="emails" checked>
+                    <label for="emails" class="form-check-label">Quer receber os e-mails de propaganda?</label>
+                 </div>
+                 <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="desabilitado" disabled>
+                    <label for="desabilitado" class="form-check-label">Esta você não vai marcar</label>
+                 </div>
+                 <div class="mb-4">
+                    <h2>Qual você quer?</h2>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="meu_radio" id="a" value="a" checked>
+                        <label for="a" class="form-check-label">Radio checado</label>
+                    </div>
+                 </div>
+                 <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="b" name="b">
+                    <label for="b" class="form-check-label">Radio para marcar</label>
+                 </div>
+                 <div class="form-check">
+                    <input type="radio" class="form-check-input" name="meu_radio" id="c" name="c" disabled>
+                    <label for="c" class="form-check-label">Radio desabilitado</label>
+                 </div>
+
+                 <!-- Switch 
+                      Tem uma estilização diferente
+                      Parecendo um botaõ on/off beminteressante para aplicações modernas  -->
+
+                <div class="mb-4">
+                    <h2> Escolha suas configuraçãoes: </h2>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="flex-switch">
+                        <label for="flex-switch" class="form-check-label">Você quer ativar isto?</label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="flex-switch-disabled" disabled>
+                        <label for="flex-switch-disabled" class="form-check-label">Switch Desabilitado</label>
+                    </div>
+                </div>
+
+                <!--         Range
+                     Regula parâmetro por uma barra
+                     pode-se definir um valor mínimoe máximo -->
+
+                <div class="mb-4">
+                    <h2>Por favor responda:</h2>
+                    <label for="probabilidade" class="form-label">Qual a probabilidade de você indicar este site para alguém?</label>
+                    <input type="range" class="form-range" min="0" max="5" id="probabilidade"   >
+                </div>
+
+                <!-- inputs groups 
+                     Ás vezes agrupando funções  
+                     Ou tornando o input mais objetivo -->
+                
+                <div class="input-group mb-4">
+                    <span class="input-group-text" id="basic-addon">@</span>  
+                    <input type="email" class="form-control" placeholder="Digite seu e-mail">              
+                </div>
+
+                <div class="input-group mb-4">
+                    <span class="input-group-text" id="basic-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="Digite o nome do usuário">
+                </div>
+
+                <p>Quantos você quer depositar? (sem centavos)</p>
+                <div class="input-group mb-4">
+                    <span class="input-group-text" id="basic-addon3">R$</span>
+                    <input type="text" class="form-control" placeholder="valor">
+                    <span class="input-group-text">,00</span>
+                </div>
+
+
+
+                <!--    LABEL FLUTUANTE
+                    São uma maneira de deixar a LABEL dentro do input 
+                    Semelhante aos formulários do Google   -->
+
+                <h2>Faça o login para continuar:</h2>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="insira seu e-mail">
+                    <label for="email">Insira seu e-mail</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="password" class="form-control" id="password" placeholder="insira sua senha">
+                    <label for="password">insira sua senha</label>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Entrar">
+            </form>
+         </div>
+</body>
+</html>z

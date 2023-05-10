@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Bootstrap ícon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-md">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h1>Produto</h1>
+                <form class="row needs-validation">
+                    <div class="col-9 mb-4">
+                        <label for="titulo" class="form-label">Título:</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="nome produto"  required>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                    </div>                    
+                    <div class="col-9 mb-4">
+                        <label for="descricao" class="form-label">Descrição:</label>
+                        <textarea class="form-control" maxlength="30" required></textarea>
+                    </div>
+
+                    <p>Valor do produto:</p>    
+                    <div class="input-group mb-4">
+                        <span class="input-group-text" id="basic-addon">R$</span>
+                        <input type="text" class="form-control" placeholder="valor">
+                        <span class="input-group-text">,00</span>
+                    </div>
+
+                    <div class="form-check">
+                        <p>Produto Disponível?</p>
+                        <input type="radio" class="form-check-radio" name="sim" id="sim">
+                        <label for="sim" class="form-check-label">Sim</label>
+                    </div>
+                    
+                    <div class="form-check mb-4">
+                        <input type="radio" class="form-check-radio" name="sim" id="sim">
+                        <label for="sim" class="form-check-label">Não</label>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="categoria" class="form-label">
+                            <select name="categoria" id="categoria" class="form-select">
+                                <option selected>Selecione uma categoria</option>
+                                <option value="1">Alimentício</option>
+                                <option value="2">Eletrodoméstico</option>
+                                <option value="3">Cama mesa e banho</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-9 mb-4">
+                        <button type="submit"class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
