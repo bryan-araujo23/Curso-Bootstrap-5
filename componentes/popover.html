@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popovers</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Javasript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+    <!--Script-->
+    <script src="js/scripts.js" defer></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        popover: É um elemento que necessita da ação de um botão 
+        Ao clicar no botão uma área informativa aparece, precisamos de um código JS para ativar popovers
+    -->
+
+    <div class="container mb-4">
+        <button class="btn btn-lg btn-success" type="button" data-bs-toggle="popover" title="Este é o título" data-bs-content="E aqui podemos inserir a descrição">Clique aqui</button>
+    </div>
+
+    <div class="container mb-4">
+        <button class="btn btn-lg btn-danger" type="button" data-bs-toggle="popover" title="Este é o título 2" data-bs-content="E aqui podemos inserir a descrição 2">Clique aqui</button>
+    </div>
+</body>
+</html>.
