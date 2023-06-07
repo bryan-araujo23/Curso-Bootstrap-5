@@ -1,3 +1,40 @@
 @charset "utf-8";
 
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #252525;
+    color: #fff;
+}
+
+
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.secondary-bg-color {
+    background-color: #c09578;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.primary-color {
+    color: #c09578
+}
+
+.secondary-color {
+    color: #626262;
+}
+
+.light-color {
+    color:#FCF5EB
+}
