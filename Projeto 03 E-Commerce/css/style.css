@@ -83,7 +83,6 @@ body {
 
 
 
-
 .navbar-brand {
     font-weight: 700;
     width: 100%;
@@ -132,8 +131,6 @@ body {
     border-radius: 3px;
     padding: 5px 15px
 }
-
-
 
 #search-form input{
     background-color: transparent;
@@ -201,11 +198,9 @@ body {
 }
 
 
-
 .carousel-caption h5 {
     font-size: 4em;
 }
-
 
 /* mini banners */
 
@@ -277,7 +272,6 @@ body {
 }
 
 
-
 #best-sellers .row {
     margin: 0;
 }
@@ -334,9 +328,7 @@ body {
     border-color: #C09578;
 }
 
-
 /* Bottom Banner */
-
 
 #bottom-banner {
     background-color: #101010;
@@ -369,7 +361,6 @@ body {
         font-size: 6em;
     }
 }
-
 
 /* New products */
 
@@ -406,9 +397,6 @@ body {
     width: 90px;
     margin: 2em auto;
 }
-
-
-
 
 /* Galeria */
 
@@ -448,4 +436,70 @@ body {
 
 #insta6 {
     background-image: url('../img/insta6.jpg');
+}
+
+
+/* FOOTER */
+
+#footer-links-container {
+    border-bottom: 1px solid #626262;
+}
+
+
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media(min-width: 768px){
+    #footer .footer-column {
+        padding: 5em 2em;
+    }
+}
+
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+
+#footer-links-container li {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
+#footer-links-container a {
+    text-decoration: none;
+}
+
+
+#footer-links-container a:hover {
+    color: #c09578;
+}
+
+#footer-center {
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+    font-weight: 900;
+    text-align: center;
+}
+
+#footer-center p {
+    text-align: center;
+}
+
+#footer-center .store-phone {
+    color:#c09578;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -15px;
 }
