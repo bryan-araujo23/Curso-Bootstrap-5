@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+p {
+    color: fuchsia;
+}
+
+
+.box-sticky,
+.box-fixed {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+
+.box-fixed {
+    background-color: blueviolet;
+}
