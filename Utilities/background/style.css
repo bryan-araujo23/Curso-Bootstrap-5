@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+
+body {
+    padding-bottom: 1000px;
+}
+
+
+.col-12 {
+    height: 100px;
+}
