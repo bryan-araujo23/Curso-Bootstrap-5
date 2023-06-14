@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura e largura</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../largura e altura/style.css">
+</head>
+<body>
+    <h1>Largura e altura</h1>
+    <p>
+        Há classes que nos permitem alteraros atributos de alturae largura de um elemento.
+        Podemos então criar "colunas" com diferentes opções além do grid de 12
+    </p>
+
+    <div class="container">  <!--Largura-->
+        <div class="w-25 bg-primary">a</div>
+        <div class="w-50 bg-info">b</div>
+        <div class="w-75 bg-dark" style="color:aliceblue">c</div>
+        <div class="w-100 bg-success">d</div>
+
+        <div class="container altura m-4">      <!--Altura-->
+            <div class="row h-100">
+                <div class="col-3 h-25  bg-primary">E</div> <!--25% dos meus 500px de altura no css-->
+                <div class="col-3 h-50  bg-success">F</div> <!--50% dos meus 500px de altura no css-->
+                <div class="col-3 h-75  bg-info">G</div>    <!--75% dos meus 500px de altura no css-->
+                <div class="col-3 h-100  bg-danger">H</div>    <!--100% dos meus 500px de altura no css-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
