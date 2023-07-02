@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+
+.pixel-1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.pixel-2{
+    background-color: #0000FF;
+    width: 500px;
+    height: 50px;
+}
+
+
+.pai-porcentagem {
+    height: 500px;
+    width: 500px;
+    background-color:limegreen;
+}
+
+.filho-porcentagem {
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+.pai-em {
+    font-size: 50px;
+}
+
+
+.filho-em {
+    width: 1em;    /* 50 px */
+    height: 2em;  /* 100px */
+    background-color: aquamarine;
+}

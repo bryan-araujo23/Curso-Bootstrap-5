@@ -1,0 +1,25 @@
+
+/* Bordas */
+
+body {
+    margin: 0px;
+}
+
+
+.boxmodel-1,
+.boxmodel-2,
+.boxmodel-3 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 10px solid #000;
+    border-radius: 20px 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+}

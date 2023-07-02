@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+
+h1 {
+    color: red;
+}
+
+/* seletor */
+
+h2 {                           
+    color: green;    /* color(propriedade): green(valor) */
+    text-align: center;
+    font-size: 50px;
+}
+
+#primeiro {
+    color: rebeccapurple;
+}
+
+.segundo {
+    color: yellowgreen
+}
+
+
+/* cores */
+
+.nome {
+    color: orange;
+}
+
+.hexa {
+    color: #6a40c4;
+}
+
+.rgba {
+    color: rgba(17, 197, 214, 1);
+}
+
+
+/* backgrounds */
+
+
+.div-background {
+    background-image: url('img/pexels-christo-james-v-724507.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+
+
+.titulo-background{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Fonts */
+
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+
+.serif {
+    font-family: "times new roman" ;
+}
+
+
+.sans-serif {
+    font-family: Arial;
+}
+
+.monospace {
+    font-family: 'Courier New';
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+    
+}
+
+.weight {
+    font-weight: ;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.variant {
+    font-variant: small-caps;
+}
